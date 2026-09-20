@@ -1,0 +1,92 @@
+[
+  {
+    "id": "doc_energy_01",
+    "title": "Campus Energy Efficiency & Load Management Guide",
+    "category": "Energy",
+    "source": "Bureau of Energy Efficiency (BEE) & UNEP Higher Education Guidelines",
+    "tags": ["energy", "electricity", "hvac", "lighting", "load-shifting"],
+    "date": "2025-01-15",
+    "description": "Strategies for educational institutions to reduce peak electrical load and optimize consumption.",
+    "content": "Educational institutions consume significant power through lighting, computer labs, hostel appliances, and HVAC systems. Practical energy efficiency interventions include: (1) Transitioning fluorescent T8/T12 fixtures to high-efficiency LED luminaires, which typically offer 40-50% lower energy draw per lumen. (2) Installing occupancy sensors and automated scheduling in lecture halls and laboratories to eliminate phantom baseload. (3) Setting standard institutional thermostat setpoints (24°C - 26°C for cooling) to avoid over-cooling. (4) Implementing energy sub-metering across departmental blocks to identify high-variance outliers and conduct targeted walk-through audits before large capital investments."
+  },
+  {
+    "id": "doc_energy_02",
+    "title": "Rooftop Solar PV Integration for Academic Campuses",
+    "category": "Energy",
+    "source": "Ministry of New and Renewable Energy (MNRE) & International Solar Alliance",
+    "tags": ["solar", "renewable", "rooftop", "clean-energy", "sdg7"],
+    "date": "2025-02-10",
+    "description": "Technical and operational considerations for distributed solar energy in colleges.",
+    "content": "College campuses often feature large unshaded rooftop footprints across academic blocks and hostels. Key implementation steps: (1) Shadow analysis and structural roof integrity inspection. (2) Net-metering policy alignment with local electric distribution companies (DISCOMs). (3) Hybrid solar-grid arrangements to offset diurnal peak demands from classrooms, workshops, and administrative blocks. (4) Real-time generation monitoring displays in student common areas to promote environmental literacy and institutional accountability."
+  },
+  {
+    "id": "doc_water_01",
+    "title": "Hostel & Academic Water Conservation Protocols",
+    "category": "Water",
+    "source": "Central Ground Water Board (CGWB) Sustainable Campus Framework",
+    "tags": ["water", "conservation", "hostels", "leaks", "aerators"],
+    "date": "2025-01-20",
+    "description": "Methods to mitigate tap leaks, reduce student per-capita water waste, and optimize fixtures.",
+    "content": "Residential student hostels and canteen facilities represent up to 70% of total campus freshwater withdrawal. Critical conservation levers include: (1) Retrofitting sink faucets with flow aerators (reducing flow from 9-12 L/min to 3-4 L/min without compromising wash pressure). (2) Dual-flush toilet cistern mechanisms (3L liquid / 6L solid). (3) Routine maintenance audits: a single continuously leaking faucet at 1 drip per second wastes over 30 liters daily. (4) Deploying simple student mobile leak reporting boards with fast facilities-team resolution turnaround."
+  },
+  {
+    "id": "doc_water_02",
+    "title": "Rainwater Harvesting & Decentralized Greywater Treatment",
+    "category": "Water",
+    "source": "National Water Mission & CPCB Campus Water Guidelines",
+    "tags": ["rainwater-harvesting", "greywater", "aquifer-recharge", "sdg6"],
+    "date": "2025-02-18",
+    "description": "Engineering and ecological techniques for water recycling and groundwater replenishment.",
+    "content": "Capturing monsoon runoff via rooftop gutters into desilting chambers and filtration recharge shafts replenishes depleted local aquifers. Furthermore, decentralized phytorid or reed-bed greywater treatment systems process wastewater from hostel showers and washbasins for non-potable campus landscaping, toilet flushing, and cooling towers, reducing reliance on municipal tankers or deep borewells."
+  },
+  {
+    "id": "doc_waste_01",
+    "title": "Three-Bin Waste Segregation & Organic Composting Manual",
+    "category": "Waste",
+    "source": "Solid Waste Management Rules (SWM) & SBM Campus Protocol",
+    "tags": ["waste", "segregation", "composting", "organic", "circular-economy"],
+    "date": "2025-01-28",
+    "description": "Operational guidelines for solid waste segregation at source and cafeteria food waste composting.",
+    "content": "Source segregation is the foundation of institutional waste management. Campuses must implement standardized color-coded 3-bin systems: Green for biodegradable/wet food waste, Blue for dry recyclables (paper, plastic, cans), and Red/Black for domestic hazardous/sanitary waste. Daily cafeteria food scraps can be diverted into decentralized aerobic compost drums or vermicompost pits, generating nutrient-rich organic manure for campus horticultural gardens within 4-6 weeks while avoiding methane generation in landfills."
+  },
+  {
+    "id": "doc_waste_02",
+    "title": "Campus E-Waste & Hazardous Material Disposal Guidelines",
+    "category": "Waste",
+    "source": "CPCB E-Waste Management Rules & Green Electronics Council",
+    "tags": ["e-waste", "electronics", "hazardous", "recycling", "sdg12"],
+    "date": "2025-02-25",
+    "description": "Safe life-cycle management of computing hardware, batteries, and lab chemicals.",
+    "content": "Higher education institutions generate obsolete computers, monitors, circuit boards, and UPS lead-acid batteries. Key protocols: (1) Establish centralized e-waste collection drives at the end of each semester. (2) Prioritize refurbished donation of usable equipment to regional schools. (3) Solely partner with state pollution control board authorized recyclers with documented chain-of-custody certificates. (4) Segregate chemical lab effluents prior to drainage into public municipal sewage lines."
+  },
+  {
+    "id": "doc_transport_01",
+    "title": "Low-Carbon Campus Commute & Active Mobility Strategies",
+    "category": "Transportation",
+    "source": "Institute for Transportation and Development Policy (ITDP) University Transit Guide",
+    "tags": ["transportation", "cycling", "public-transit", "ev-charging", "active-mobility"],
+    "date": "2025-02-05",
+    "description": "Promoting sustainable transit, pedestrianization, and last-mile electric campus shuttles.",
+    "content": "Campus commuter footprints stem primarily from single-occupancy private motorbikes and cars. Sustainable alternatives include: (1) Internal car-free pedestrian zones with dedicated shaded walkways and bicycle priority lanes. (2) Public bike-share stations with docking hubs near campus gates, hostels, and sports facilities. (3) Synchronizing college shuttle bus routes with regional metro and commuter railway timetables. (4) Installing solar-backed Level-2 EV charging points to incentivize zero-tailpipe emission scooters and electric two-wheelers."
+  },
+  {
+    "id": "doc_buildings_01",
+    "title": "Green Building & Passive Design Principles for Campuses",
+    "category": "Green Buildings",
+    "source": "GRIHA & IGBC Green Campus Rating Systems",
+    "tags": ["green-buildings", "passive-design", "ventilation", "daylighting", "sdg11"],
+    "date": "2025-01-10",
+    "description": "Architectural and maintenance approaches to optimize daylight and indoor air quality.",
+    "content": "Passive architectural principles leverage climate-responsive building envelopes: (1) Orientation of windows along North-South facades to maximize diffuse natural daylight while mitigating harsh solar heat gain. (2) Encouraging cross-ventilation through high louvers and stack-effect atriums to lessen mechanical air-conditioning hours. (3) Cool-roof solar reflective coatings (SRI > 78) applied to flat concrete roofs, lowering top-floor temperatures by 3°C to 5°C. (4) Urban tree canopy expansion to reduce localized microclimate heat island effects."
+  },
+  {
+    "id": "doc_engagement_01",
+    "title": "Student Sustainability Clubs & Behavioral 'Nudge' Campaigns",
+    "category": "Campus Awareness",
+    "source": "UNESCO Education for Sustainable Development (ESD) Toolkit",
+    "tags": ["awareness", "student-engagement", "nudges", "behavioral-change"],
+    "date": "2025-03-01",
+    "description": "Engaging collegiate communities through green ambassadors, audits, and gamified challenges.",
+    "content": "Technological infrastructure succeeds best when accompanied by student ownership and behavioral nudges: (1) Visual reminder stickers near light switches ('Power down before you depart'). (2) Inter-hostel energy and water conservation competitions with monthly leaderboard celebrations. (3) Sustainability ambassador councils empowering students to conduct peer waste audits and food-waste tracking in mess halls. (4) Integrating experiential campus sustainability audits into environmental studies curricula."
+  }
+]
