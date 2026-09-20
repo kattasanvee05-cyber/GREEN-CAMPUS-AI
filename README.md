@@ -1,170 +1,407 @@
-# GREEN CAMPUS AI
+# Green Campus AI
 
 ### AI-Powered Sustainability Management & Decision Support Platform
 
-**1M1B AI for Sustainability Virtual Internship**  
-*In collaboration with IBM SkillsBuild and AICTE*  
+Green Campus AI is a sustainability management platform designed to help educational institutions understand campus resource usage and identify practical actions across **energy, water, waste, transportation, and campus operations**.
 
-- **Student:** Katta Sanvee  
-- **Internship ID:** `INTERNSHIP_17828984086a44dee80acf6`  
-- **Primary SDG:** **SDG 11 — Sustainable Cities and Communities**  
-- **Secondary SDGs:** SDG 6 (Clean Water & Sanitation), SDG 7 (Affordable & Clean Energy), SDG 12 (Responsible Consumption & Production), SDG 13 (Climate Action)  
+The platform combines **Retrieval-Augmented Generation (RAG), IBM Granite through watsonx.ai, sustainability knowledge resources, analytics, and responsible AI principles** to provide grounded sustainability guidance.
 
 ---
 
-## 1. Project Purpose & Overview
+## 🌱 Project Overview
 
-Educational institutions operate as micro-cities, generating substantial environmental footprints across electricity baseloads, freshwater draw, cafeteria food scraps, and single-occupancy commuter trips. However, the true barrier is not simply consumption: **students, faculty, and campus administrators lack an accessible, trustworthy tool that connects fragmented sustainability data and institutional guidelines with practical, prioritized actions.**
+Educational campuses manage several interconnected sustainability challenges:
 
-**GreenCampus AI** solves this dilemma through:
-1. **IBM Granite Foundation Models / watsonx.ai** for enterprise generative decision support (with an honest, local grounded fallback provider).
-2. **Retrieval-Augmented Generation (RAG)** retrieving verified institutional manuals (BEE, UNEP, CPCB, MNRE) before synthesizing recommendations.
-3. **6-Step Observable Agent Workflow** (Intent → Domain → RAG → Grounding → Synthesis → Safety Verification).
-4. **Campus Sustainability Assessment** generating an objective Prototype Sustainability Profile.
-5. **Resource Telemetry Analytics** for Energy, Water, Waste, and Commuter Mobility.
-6. **AI Action Plan** structured into Quick-Win, Medium-Term, and Long-Term tiers.
-7. **Responsible AI by Design** strictly enforcing Fairness, Transparency, Privacy, Safety, and Human Oversight.
-8. **Built-in 12-Slide Presentation Deck** for evaluators (`/presentation` and standalone `presentation.html`).
+* Energy consumption
+* Water usage
+* Waste management
+* Transportation
+* Sustainable campus operations
 
----
+Information about these areas is often distributed across different resources, making it difficult to turn sustainability information into practical actions.
 
-## 2. Technology Stack
+**Green Campus AI brings these areas together in one platform.**
 
-- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Lucide Icons, Canvas Confetti.
-- **Backend:** Python 3.12, FastAPI, Uvicorn, SQLite3, Pydantic v2.
-- **AI & RAG:** IBM Granite (watsonx.ai REST client) + Local Grounded RAG with TF-IDF/Vector similarity scoring and Responsible AI safety filter.
-- **Charts:** Custom responsive SVG & Canvas line, bar, and donut charts.
+Users can explore sustainability information, ask questions, assess campus conditions, view resource analytics, and receive structured recommendations.
 
 ---
 
-## 3. Project Directory Structure
+## 🎯 Sustainable Development Goals
 
+### Primary SDG
+
+**SDG 11 — Sustainable Cities and Communities**
+
+The project focuses on supporting more sustainable and resilient campus environments.
+
+### Supporting SDGs
+
+* **SDG 6 — Clean Water and Sanitation**
+* **SDG 7 — Affordable and Clean Energy**
+* **SDG 12 — Responsible Consumption and Production**
+* **SDG 13 — Climate Action**
+
+---
+
+## ✨ Key Features
+
+### AI Sustainability Advisor
+
+Users can ask questions about campus sustainability and receive practical recommendations.
+
+Example:
+
+> How can our college reduce electricity consumption?
+
+The system uses relevant sustainability information to generate a grounded response.
+
+### Knowledge Base & RAG
+
+The platform retrieves relevant information from a curated sustainability knowledge base before generating responses.
+
+Basic workflow:
+
+```text
+User Question
+      ↓
+Question Processing
+      ↓
+Knowledge Retrieval
+      ↓
+Relevant Context
+      ↓
+IBM Granite
+      ↓
+Grounded Response
 ```
+
+### Campus Sustainability Assessment
+
+Users can provide campus-related information across areas such as:
+
+* Energy
+* Water
+* Waste
+* Transportation
+* Buildings
+
+The platform organizes the information into a sustainability profile and identifies areas where action may be useful.
+
+### Resource Analytics
+
+The platform provides visual analytics for:
+
+* Energy
+* Water
+* Waste
+* Transportation
+
+These dashboards help users understand resource-related patterns and identify areas for improvement.
+
+### AI Action Plans
+
+Recommendations can be organized into:
+
+* **Quick Wins**
+* **Medium-Term Actions**
+* **Long-Term Actions**
+
+This helps turn sustainability information into practical next steps.
+
+### Responsible AI
+
+The platform incorporates:
+
+* Transparency
+* Privacy
+* Fairness
+* Safety
+* Human oversight
+* Grounded responses
+
+AI recommendations are intended to support human decision-making rather than replace institutional decision-makers.
+
+---
+
+## 🧠 AI Architecture
+
+The AI workflow combines RAG with IBM Granite.
+
+```text
+                User
+                  │
+                  ▼
+          Green Campus AI
+                  │
+                  ▼
+          Question Analysis
+                  │
+                  ▼
+         Knowledge Retrieval
+                  │
+                  ▼
+        Sustainability Context
+                  │
+                  ▼
+            IBM Granite
+                  │
+                  ▼
+        Responsible AI Checks
+                  │
+                  ▼
+       Practical Recommendation
+```
+
+The system does not rely only on a general language model. Relevant sustainability information is retrieved first and provided as context for response generation.
+
+---
+
+## 🏗️ Technology Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Lucide Icons
+
+### Backend
+
+* Python
+* FastAPI
+* Uvicorn
+* SQLite
+* Pydantic
+
+### AI
+
+* IBM watsonx.ai
+* IBM Granite
+* Retrieval-Augmented Generation (RAG)
+* Vector / similarity-based retrieval
+* Responsible AI safeguards
+
+---
+
+## 📁 Project Structure
+
+```text
 green-campus-ai/
+│
 ├── backend/
-│   ├── main.py                     # FastAPI entry point, CORS, search, health check
-│   ├── database.py                 # SQLite schema, initial seeding of demo data
-│   ├── config.py                   # Environment config (IBM watsonx.ai credentials)
-│   ├── models.py                   # Pydantic schemas
-│   ├── requirements.txt            # Python dependencies
+│   ├── main.py
+│   ├── database.py
+│   ├── config.py
+│   ├── models.py
+│   ├── requirements.txt
+│   │
 │   ├── data/
-│   │   ├── knowledge_base.json     # Curated institutional sustainability manuals
-│   │   └── campus_sustainability.db# SQLite database
+│   │   └── knowledge_base.json
+│   │
 │   ├── services/
 │   │   └── ai/
-│   │       ├── granite_service.py  # IBM Granite REST client + Demo AI Mode fallback
-│   │       ├── rag_service.py      # TF-IDF & vector retrieval over knowledge base
-│   │       ├── agent_service.py    # 6-step multi-domain agent coordinator
-│   │       └── safety_service.py   # Responsible AI & safety guardrails
+│   │       ├── granite_service.py
+│   │       ├── rag_service.py
+│   │       ├── agent_service.py
+│   │       └── safety_service.py
+│   │
 │   └── routers/
-│       ├── auth.py                 # Login, signup, 1-click demo accounts
-│       ├── ai.py                   # AI query endpoints & sample questions
-│       ├── assessment.py           # Campus sustainability profile calculator
-│       ├── analytics.py            # Energy, water, waste, transport endpoints
-│       ├── actions.py              # Action items & status updates
-│       ├── knowledge.py            # CRUD operations for knowledge base admin
-│       └── notifications.py        # Notification delivery & read tracking
+│       ├── auth.py
+│       ├── ai.py
+│       ├── assessment.py
+│       ├── analytics.py
+│       ├── actions.py
+│       ├── knowledge.py
+│       └── notifications.py
+│
 ├── frontend/
 │   ├── src/
-│   │   ├── components/             # Navbar, Sidebar, Modals, SVG Charts
-│   │   ├── pages/                  # 16 complete functional pages
-│   │   ├── services/api.ts         # Central API client
-│   │   └── types/index.ts          # TypeScript interfaces
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── types/
+│   │
 │   ├── package.json
-│   ├── vite.config.ts
-│   └── tailwind.config.js
-├── presentation.html               # Standalone 12-slide presentation file
+│   └── vite.config.ts
+│
 ├── .env.example
 └── README.md
 ```
 
 ---
 
-## 4. How to Run Locally
+## 🚀 Running the Project
 
-### Prerequisites
-- Node.js (v18+)
-- Python (3.10+)
+### Requirements
 
-### A. Run Backend
+* Python 3.10+
+* Node.js 18+
+* npm
+
+### 1. Start the Backend
+
 ```bash
 cd backend
 python -m pip install -r requirements.txt
 python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 ```
-The backend will run on `http://127.0.0.1:8000`. Test health at `http://127.0.0.1:8000/api/health`.
 
-### B. Run Frontend
+Backend:
+
+```text
+http://127.0.0.1:8000
+```
+
+Health check:
+
+```text
+http://127.0.0.1:8000/api/health
+```
+
+### 2. Start the Frontend
+
+Open another terminal:
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The frontend will run on `http://localhost:5173`.
+
+Frontend:
+
+```text
+http://localhost:5173
+```
 
 ---
 
-## 5. IBM Granite Configuration Steps
+## 🔐 IBM Granite Configuration
 
-GreenCampus AI is pre-configured with a transparent **Demo AI Mode (Local Grounded RAG)** that runs offline with zero external credentials.
+For AI response generation, the application can connect to **IBM watsonx.ai** and an IBM Granite model.
 
-To connect live IBM watsonx.ai foundation models:
-1. Obtain an **IBM Cloud API Key** from [cloud.ibm.com](https://cloud.ibm.com).
-2. Create a project in [watsonx.ai](https://dataplatform.cloud.ibm.com) and copy the **Project ID (GUID)**.
-3. Configure your operating environment or create a `.env` file in `backend/`:
-   ```env
-   IBM_WATSONX_API_KEY=your_ibm_api_key_here
-   IBM_PROJECT_ID=your_watsonx_project_id_here
-   IBM_URL=https://us-south.ml.cloud.ibm.com
-   IBM_GRANITE_MODEL=ibm/granite-3-8b-instruct
-   ```
-4. Restart the backend. The platform badge will instantly update from:
-   `Demo AI Mode (Local Grounded RAG)` → `IBM Granite Connected`.
+Configure the required credentials through environment variables rather than placing credentials directly in the source code.
 
----
+Example:
 
-## 6. Demo Mode Credentials (1-Click Available)
+```env
+IBM_WATSONX_API_KEY=your_api_key
+IBM_PROJECT_ID=your_project_id
+IBM_URL=https://us-south.ml.cloud.ibm.com
+IBM_GRANITE_MODEL=your_granite_model_id
+```
 
-On the `/login` screen, you can click either pre-loaded demo account button:
-- **Student Researcher:** `student@greencampus.edu` (Password: `student123`)
-- **Campus Director (Admin):** `admin@greencampus.edu` (Password: `admin123`)
+### Security
+
+Never commit real API keys or credentials to GitHub.
+
+Use `.env` for local credentials and keep `.env` excluded from version control.
 
 ---
 
-## 7. 5-Minute Evaluator Presentation Script
+## 🔎 RAG Workflow
 
-1. **0:00 - 0:45 (Landing Page):** Open `/`, introduce GreenCampus AI, student Katta Sanvee, 1M1B context, and SDG 11 primary alignment.
-2. **0:45 - 1:15 (Login & User Persona):** Demonstrate 1-click demo login, showing the personalized User Dashboard (`/dashboard`) with 4 telemetry cards labeled *"Demo / Estimated"*.
-3. **1:15 - 2:30 (AI Advisor & RAG):** Ask sample query: *"How can our college reduce electricity consumption?"*. Highlight the 6-step agent execution pipeline and inspect the RAG citations drawer.
-4. **2:30 - 3:30 (Assessment & Action Plan):** Fill campus parameters (`/assessment`), generate the Prototype Sustainability Profile, and mark an item as Completed in `/action-plan`.
-5. **3:30 - 4:30 (Analytics & Responsible AI):** Review Energy/Water/Waste/Transport telemetry and explain the 5 Responsible AI pillars (`/responsible-ai`).
-6. **4:30 - 5:00 (12-Slide Deck):** Navigate to `/presentation` to showcase the 12-slide presentation view.
+Green Campus AI uses a retrieval-based workflow to improve the relevance of sustainability responses.
+
+```text
+Sustainability Knowledge
+        ↓
+Document Processing
+        ↓
+Knowledge Storage
+        ↓
+Similarity Search
+        ↓
+Relevant Information
+        ↓
+IBM Granite
+        ↓
+Grounded Answer
+```
+
+The knowledge base can contain information related to:
+
+* Energy efficiency
+* Water conservation
+* Waste management
+* Sustainable transportation
+* Renewable energy
+* Green buildings
+* Campus sustainability practices
 
 ---
 
-## 8. 12-Slide Presentation Deck Reference
+## 🛡️ Responsible AI
 
-Both built-in at `/presentation` and standalone in `presentation.html`:
-- **Slide 1:** Title (GreenCampus AI, Katta Sanvee, 1M1B × IBM SkillsBuild × AICTE, SDG 11)
-- **Slide 2:** The Problem (The Campus Sustainability Challenge)
-- **Slide 3:** SDG Alignment (Why SDG 11?)
-- **Slide 4:** Target Users & Need (Students, Faculty, Administrators, Sustainability Teams)
-- **Slide 5:** Proposed Solution (AI + RAG + IBM Granite + Analytics + Agent Workflow + Responsible AI)
-- **Slide 6:** Key Features (One Platform, Multiple Sustainability Needs)
-- **Slide 7:** AI + RAG Architecture (How AI Works)
-- **Slide 8:** Agent Workflow (From Question to Action)
-- **Slide 9:** Working Prototype (Dedicated interface placeholders for live demo)
-- **Slide 10:** Responsible AI (Fairness, Transparency, Privacy, Safety, Human Oversight)
-- **Slide 11:** Expected Impact & Current Limitations (Transparent engineering realism)
-- **Slide 12:** Conclusion & Future Scope ("AI should not replace human decisions — it should help people make better-informed ones")
+Green Campus AI follows responsible AI principles throughout the system.
+
+### Transparency
+
+Users should understand when information or recommendations are generated using AI.
+
+### Privacy
+
+The application should avoid unnecessary collection of personal information.
+
+### Fairness
+
+Recommendations should avoid assumptions based on sensitive or unrelated personal characteristics.
+
+### Safety
+
+The system should avoid presenting uncertain recommendations as guaranteed outcomes.
+
+### Human Oversight
+
+AI provides recommendations and information. Final institutional decisions remain with appropriate people and authorities.
 
 ---
 
-## 9. Known Limitations & Engineering Realism
+## 📊 Data & Results
 
-- The prototype utilizes sample and demonstration data where IoT physical meters are not installed.
-- Simulated indicators (e.g. *"~35 kL / month water savings"*) are explicitly labeled as **"Demo / Estimated Metrics"** and cannot replace calibrated instrumentation.
-- The Campus Sustainability Assessment is an educational prototype and does not represent an official ISO 14001 or NAAC green rating.
-- Physical capital investments and electrical modifications require sign-off by licensed institutional facilities engineers.
-#   G R E E N - C A M P U S - A I  
- 
+Some application dashboards may use sample or user-provided data when direct campus measurement systems are unavailable.
+
+Such information should not be interpreted as measured environmental performance unless it comes from validated campus data.
+
+Actual environmental improvements require:
+
+* Real measurements
+* Appropriate validation
+* Institutional data
+* Continuous monitoring
+* Human review
+
+---
+
+## 🔮 Future Scope
+
+Potential future improvements include:
+
+* Integration with smart energy meters
+* Real-time water monitoring
+* Automated waste tracking
+* Campus IoT integration
+* Multilingual sustainability assistance
+* Improved forecasting
+* Mobile application
+* Integration with institutional sustainability databases
+* Additional sustainability knowledge sources
+
+---
+
+## 👩‍💻 Project
+
+**Green Campus AI**
+
+Developed as part of the **1M1B AI for Sustainability Virtual Internship in collaboration with IBM SkillsBuild and AICTE**.
+
+**Student:** Katta Sanvee
+
+**Internship ID:** `INTERNSHIP_17828984086a44dee80acf6`
+
+---
+
+## 📌 Note
+
+Green Campus AI is designed as a sustainability decision-support platform. AI-generated recommendations should be reviewed by appropriate users and validated against real campus information before being used for operational decisions.
